@@ -22,15 +22,16 @@ public class SearchNilai01 {
         for (int i = 0; i < nilai.length; i++) {
             if (key == nilai[i]) {
                 hasil = (i+1);
+                System.out.println("Nilai " + key+ " Ketemu, merupakan nilai mahasiswa ke-" + hasil);
                 break;
             }else {
-            System.out.print("Nilai yang dicari tidak ditemukan");
-            return; 
+                System.out.print("Nilai yang dicari tidak ditemukan");
+                return; 
+            }
         }
-        }
+        System.out.println();
+        System.out.println();
         
-        System.out.println();
-        System.out.println("Nilai " + key+ " Ketemu, merupakan nilai mahasiswa ke-" + hasil);
-        System.out.println();
+       
     }
 }
